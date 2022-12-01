@@ -1,0 +1,30 @@
+.btn {
+  width: 100%;
+  border: 3px solid black;
+  border-radius: 10px;
+  background: none;
+  aspect-ratio: 1/1;
+  font-size: 2rem;
+  text-transform: uppercase;
+  padding: 0.5rem;
+  cursor: pointer;
+  font-weight: bold;
+  color: black;
+  background-color: aliceblue;
+  transition: all 125ms ease;
+}
+
+.btn.active {
+  background-color: rgb(0, 110, 255);
+  color: aliceblue;
+}
+
+.btn.inactive {
+  opacity: 0.3;
+  cursor: default;
+}
+
+.btn:hover:not(:disabled),
+.btn:focus:not(:disabled) {
+  background-color: rgb(161, 161, 161);
+}
